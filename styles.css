@@ -1,0 +1,351 @@
+/* COLORS
+#F7F7F7
+#F0F0F0
+#E3E3E3
+#6C757D
+#343A40
+
+
+BULLET POINTS
+blue #247BA0
+turquoise #70C1B3
+celadon #B2DBBF
+yellow #F3FFBD
+carmine #FF1654
+*/
+
+@font-face{
+  font-family: "AlegreyaSansSC";
+  src: "./assets/font/AlegreyaSansSC-Italic.ttf";
+}
+
+body, html {
+  height: 100%;
+  font-family: "AlegreyaSansSC";
+  color: #343A40;
+}
+
+.jumbotron {
+    margin-top: 3%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    background-color: white;
+  }
+
+
+  /*---------------------------------------*/
+  /*                 HEADER                */
+  /*---------------------------------------*/
+#p-header {
+  height: 12%;
+  width: auto;
+  background-color: white;  
+  border-bottom: 1px solid white;
+} 
+#p-logo {
+  position: relative;
+  background-size: auto 15%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 75px;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+
+  /*---------------------------------------*/
+  /*                 HOMEPAGE              */
+  /*---------------------------------------*/
+
+#p-index {
+  height: 85%;
+  background-image: url(./assets/top-view.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#p-nav {
+  list-style-type: none;
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  font-size: 3vw;
+}
+
+a {
+  color: #6C757D;
+}
+
+a:hover {
+  color: #E3E3E3;
+}
+
+li {
+  margin-bottom: 1vw;
+}
+
+/*----Medium and large screens----*/
+@media all and (max-width: 1100px) {
+
+  #p-nav {
+    list-style-type: none;
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    right: 5vw;
+    font-size: 6vw;
+    background-color: rgba(240,240,240, 0.6);
+    align-items: center;
+  }
+  a {
+    color: #343A40;
+  }
+
+  a:hover {
+    color: #343A40;
+  }
+  
+  li {
+    text-align: center;
+    padding-right: 2vw;
+  }
+}
+
+  /*---------------------------------------*/
+  /*                 ORDER                 */
+  /*---------------------------------------*/
+
+#p-order {
+  background-image: url(./assets/cust-bckgrnd.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-bottom: 0;
+}
+/*--------menu---------*/
+.menu, .cart {
+  text-align: center;
+}
+
+.row {
+  margin-top: 3%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #F0F0F0;
+  border-style: none;
+  width: 85%;
+  margin-top: 1vw;
+}
+
+.card-title {
+  margin-top: 5%;
+  font-size: 1vw;
+}
+
+#p-img {
+  position: relative;
+  background-size: auto 15%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 12vw;
+  cursor: pointer;
+  margin-top: 15%;
+}
+
+.card-text {
+  margin-top: 25%;
+}
+
+#price-title {
+  text-align: left;
+  margin-right: 25%;
+  font-size: 1vw;
+}
+
+#p-price {
+  margin-top: 20%;
+  font-size: 1.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #E3E3E3;
+  border-style: none;
+  font-size: 1.4vw;
+}
+
+/*--------cart---------*/
+
+.col-md-9 {
+  background-color: #F0F0F0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#orders {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 185px;
+  border-style: none;
+  background-color:#F0F0F0;
+}
+
+#total {
+  text-align: right;
+  color: #6C757D;
+}
+
+#sum, #euro {
+  color: #343A40;
+  font-size: 1.8vw;
+}
+
+#submit-field-row, #submit-field-row-down {
+  margin-top: -1%;
+}
+
+.col-sm-7 {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 1.2vw;
+  left: 1vw;
+  background-color:#F0F0F0;
+  padding-right: 0;
+}
+
+.col-sm-5 {
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  right: 1vw;
+}
+
+#cart-row {
+  background-color: transparent;  
+}
+
+#address {
+  margin-left: 4%;
+  width: 82%;
+  height: 50px;
+  font-size: 0.9vw;
+}
+
+#delete-all, #delete-selected, #submit-order {
+  height: 50px;
+  margin-left: 2%;
+}
+
+
+/*--------customer---------*/
+#p-customer {
+  height: 100%;
+  margin-top: 2%;
+  text-align: center;
+  background-image: url(./assets/cust-bckgrnd.jpg);
+  background-repeat: no-repeat;
+}
+
+.list-group {
+  width: 100%;
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.list-group-item {
+  display: flex;
+  border-style: none;
+  background-color: rgba(240,240,240, 0.6);
+}
+
+.col-sm-9 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+  font-size: 2vw;
+}
+
+.input-group {
+  right: 0;
+  position: absolute;
+  width: 50%;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.2vw;
+}
+
+.span {
+  padding-left: 2vw;
+}
+
+/*--------baker---------*/
+
+.display-5{
+  text-align: center;
+}
+#p-baker {
+  height: 100%;
+  background-image: url(./assets/baker.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#order-title {
+  padding-top: 2vw;
+  padding-left: 1vw;
+  background-color: rgba(240,240,240, 0.6);
+  margin-bottom: 0;
+}
+
+/*--------driver---------*/
+
+#p-driver {
+  height: 100%;
+  background-image: url(./assets/driver.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#addr-title {
+  background-color: rgba(240,240,240, 0.6);
+  padding-left: 1.5vw;
+  font-size: 1.2vw;
+  color: #6C757D;
+  display: flex;
+  height: 3vw;
+  align-items: center;
+}
+
+#ordered-pizzas {
+  font-size: 1.2vw;
+}
+
+/*
+*   CREDIT
+*
+*   https://www.behance.net/gallery/62566673/Broccoli-pizza-and-pasta
+*   https://www.herztopf.de/selbstgemachte-pizza-mit-pesto-rosso/
+*   https://dribbble.com/
+*/
